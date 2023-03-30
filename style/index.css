@@ -1,261 +1,413 @@
 /* 흰배경 모음 */
 .first_bg, .second_bg{
-/*     background:
-    url(../img/nordwood-themes-R53t-Tg6J4c-unsplash.jpg);
-    display:cover;
-    margin:0 auto;  */
-    background-color: #f1f1f1;
-}
-.first_bg, .second_bg ::before{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)););
-}
-
-
-.second_bg {}
-.third_bg {}
-.fourth_bg {}
-.fifth_bg {}
-
-/* 첫페이지 */
-.first_bg {
-    margin:0 auto;
-}
-.first_bg .content1 {
-    width: 1220px;
-    height: 1024px;
-    margin:0 auto;
-    display:
-}
-.first_bg .content1 .first_left {
-    /* background-color: lightblue; */
-}
-.first_bg .content1 .first_left h1 {
-    
-}
-.first_bg .content1 .first_left h1 .logo {
-    
-}
-.first_bg .content1 .first_left h1 .logo img {
-    width: 224px;
-}
-.first_bg .content1 .first_left p {
-    font-size: 2.1875rem;
-    color:#00aff2;
-}
-.first_bg .content1 .first_left h2 {
-    padding-top:35px;
-    font-weight: 700;
-    font-size:4.375rem;
-    color: #333;
-}
-.first_bg .content1 .first_right {
-/*     background-color: lightgreen; */
-    position:relative;
-    padding-bottom: 200px;
-/* display: flex;
-flex-flow: row nowrap; */
-}
-.first_bg .content1 .first_right .ring {
-    margin-left: 680px;
-}
-.first_bg .content1 .first_right .ring img {
-    width:540px;
-}
-.first_bg .content1 .first_right .button {
-/*     background-color: lightcoral; */
-}
-.first_bg .content1 .first_right .button img {
-/*     background-color: aqua; */
-    width:320px;
-    position:absolute;
-    bottom: 250px; left:-700;
-    } 
-/* ------두번째 페이지------- */
-.second_bg {
-    
-}
-.second_bg .second_content {
-    width: 1220px;
-    height: 1040px;
-    margin:0 auto;
-    padding-top: 100px;
-}
-.second_bg .second_content .second_top {
-    
-}
-.second_bg .second_content .second_top p {
-    font-size: 2.1875rem;
-    color:#00aff2;
-}
-.second_bg .second_content .second_top h2 {
-    padding-top:35px;
-    font-weight: 700;
-    font-size:4.375rem;
-    color: #333;
-    padding-bottom: 100px;
-}
-.second_bg .second_content iframe {
-    width:100%
-}
-/* --------세번째 페이지-------- */
-.third_bg {
-    background-image: url(../img/Vector.png);
-    background-size: cover;
-    
-}
-.third_bg .third_content {
-    padding-top: 300px;
-    width: 1220px;
-    height: 1040px;
-    margin:0 auto;
-/*     background-color: bisque; */
-}
-.third_bg .third_content p {
-    font-size: 2.1875rem;
-    color:#00aff2;
-}
-
-.third_bg .third_content .support {
-    padding-top:35px;
-    font-weight: 700;
-    font-size 2.5rem;;
-    color: #eee;
-    padding-bottom: 100px;
-    line-height: 60px;
-}
-.third_bg .third_content a {
-/*     background-color: #00aff2; */
-}
-.third_bg .third_content a img {
-/*     background-color: #00aff2;  */
-    width:320px;
-    padding-top:100px;
-}
-/* -----네번쨰 페이지----------- */
-.fourth_bg {
-    background-image: url(../img/기본틀.png);
-    background-size: cover;
-    background-color: bisque;
-    padding-top: 100px;
-}
-.fourth_bg .fourth_content {
-    width: 1220px;
-    height: 1040px;
-    margin:0 auto;
+    /*     background:
+        url(../img/nordwood-themes-R53t-Tg6J4c-unsplash.jpg);
+        display:cover;
+        margin:0 auto;  */
+        background-color: #f1f1f1;
+    }
+    .first_bg, .second_bg ::before{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
+    }
     
     
-}
-.fourth_bg .fourth_content .header {
+    .second_bg {}
+    .third_bg {}
+    .fourth_bg {}
+    .fifth_bg {}
     
-    font-weight: 700;
-    font-size:4.375rem;
-    color: #333;
-    padding:0px 0 100px 0;
-    line-height: 1.4em; 
-}
-.fourth_bg .fourth_content .header span {
-    color:#00aff2;
+    /* 첫페이지 */
+    .first_bg {
+        margin:0 auto;
+        position: relative;}
     
-    font-weight: 700;
-    font-size:4.375rem;
-    padding:30px 0 100px 0;
-}
-.fourth_bg .fourth_content ul{
-    /* background-color: antiquewhite; */
-    display: flex;
+    .first_bg .ani {
+        background-image: url(../img/textani.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom:33%;
+        transition: all 50s;
+        animation: slide-left 30s linear infinite;}
+    
+    .first_bg .content1 {
+        width: 1220px;
+        height: 1024px;
+        margin:0 auto;
+        
+    }
+    @keyframes slide-left{
+        0%{transform: translateX(0);}
+        100%{transform: translateX(-100px);}}
+    
+    .first_bg .content1 .first_left {
+    
+    }
+    .first_bg .content1 .first_left h1 {
+        
+    }
+    .first_bg .content1 .first_left h1 .logo {
+        
+    }
+    .first_bg .content1 .first_left h1 .logo img {
+        width: 224px;
+        margin:20px 0 60px 0;
+        
+    }
+    .first_bg .content1 .text1 {
+        text-align: center;
+    }
+    .first_bg .content1 .text1 p {
+        font-size: 2.1875rem;
+        color:#333;
+    }
+    .first_bg .content1 .text1 h2 {
+        margin-top:35px;
+        font-weight: 700;
+        font-size:4.375rem;
+        color: #fff;
+        background-color: #00aff2;
+        display: inline-block;
+        padding:10px;
+    }
+    .first_bg .content1 .first_right {
+    
+        position:relative;
+        margin-top: 80px;
+        padding-bottom: 200px;
+        text-align: center;
+    
     flex-flow: row nowrap;
-    justify-content: space-between;
-    height: 500px;
+    }
+    .first_bg .content1 .first_right .ring {
+        
+    }
+    .first_bg .content1 .first_right .ring img {
+        width: 490px;
+    }
+    .first_bg .content1 .first_right .button {
     
-}
-.fourth_bg .fourth_content ul li{
-    width:32%; border: 2px solid#dbdbdb;
-    border-radius: 15px;
-/*     box-shadow: 3px 4px #dbdbdb; */
-    background-color: #f1f1f1;
-}
-.fourth_bg .fourth_content ul li .war {
-    /* background-color: aqua; */ /* padding-bottom: 105px; */
-}
-.fourth_bg .fourth_content ul li .war p  {}
-.fourth_bg .fourth_content ul li .war p img {
-    width: 100%;
-}
-.fourth_bg .fourth_content ul li .health {
-    /* background-color: green;  */
-}
-.fourth_bg .fourth_content ul li .health p {}
-.fourth_bg .fourth_content ul li .health p img {
-    width: 100%;
-}
-
-.fourth_bg .fourth_content ul li .eat {
-    /* background-color: palegoldenrod; */ /* padding-bottom: 105px; */}
-.fourth_bg .fourth_content ul li .eat p {}
-.fourth_bg .fourth_content ul li .eat p img {
-    width: 100%;
-}
-.fourth_bg .fourth_content a {
-    display: block;
-    text-align: center;
+    }
+    .first_bg .content1 .first_right .button img {
     
-}
-.fourth_bg .fourth_content a img {
-    width:320px;
-    padding-top:100px;
+        width:300px;
+        margin-top: 80px;
+        transition: all 0.7s;
+        } 
+        .first_bg .content1 .first_right .button img:hover {
+            transform: scale(0.9);
+        }
     
-}
-
-/* ----------p class text, h2통합 ---------- */
-.fourth_bg .fourth_content ul li .war .text, .fourth_bg .fourth_content ul li .health .text,
-.fourth_bg .fourth_content ul li .eat .text {
-    font-size: 1.5rem;
-    padding-top: 50px;
-    padding-left: 20px;
-}
-.fourth_bg .fourth_content ul li .eat h2, .fourth_bg .fourth_content ul li .health h2,
-.fourth_bg .fourth_content ul li .war h2 {
-    font-size: 3rem;
-    padding-top:38px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-}
-
-
-/* --------다섯번쨰 페이지--------- */
-.fifth_bg {
-    height: 926px;
-    min-width: 1280px;
-    text-align: right;
-    background: #e0f0f8 url(../img/cta_bg_1.jpg) no-repeat -100px 0;
-    background-size: cover;
-    /* overflow: hidden; */
-    position: relative;
-}
-
-.fifth_bg .right {
-    width: 1220px;
-    height: 1040px;
-    margin:0 auto;
-}
-.fifth_bg .right p{
-    text-align: right;
-    padding-top: 295px;
-    font-size: 2.5rem;
-}
-.fifth_bg .right h2{
-    text-align: right;
-    font-size: 4.3rem;
-    padding-top: 23px;
-    line-height: 1.5;
-    color:#00aff2;
-    font-weight: 700;
-}
-.fifth_bg a {
+    /* ------두번째 페이지------- */
+    .second_bg {
+        
+    }
+    .second_bg .second_content {
+        width: 1220px;
+        height: 1040px;
+        margin:0 auto;
+        padding: 150px 0;
+    }
+    .second_bg .second_content .second_top {
+        
+    }
+    .second_bg .second_content .second_top p {
+        font-size: 2.1875rem;
+        color:#00aff2;
+    }
+    .second_bg .second_content .second_top h2 {
+        padding-top:35px;
+        font-weight: 700;
+        font-size:4.375rem;
+        color: #333;
+        padding-bottom: 100px;
+    }
+    .second_bg .second_content iframe {
+        width:100%
+    }
+    /* --------세번째 페이지-------- */
+    .third_bg {
+        background-image: url(../img/bg5.png);
+        background-size: cover;
+        
+    }
+    .third_bg .third_content {
+        padding-top: 300px;
+        width: 1220px;
+        height: 1040px;
+        margin:0 auto;
+    /*     background-color: bisque; */
+    }
+    .third_bg .third_content p {
+        font-size: 2.1875rem;
+        color:#00aff2;
+    }
     
-}
-.fifth_bg a img {
-    width:320px;
-    position: absolute;
-    bottom: 100px; right: 330px;
-}
+    .third_bg .third_content .support {
+        padding-top:35px;
+        font-weight: 700;
+        font-size :2.5rem;
+        color: #eee;
+        padding-bottom: 100px;
+        line-height: 60px;
+    }
+    .third_bg .third_content a {}
+    .third_bg .third_content a img {
+    /*     background-color: #00aff2;  */
+        width:320px;
+        padding-top:100px;
+        transition: all 0.9s;
+    }
+    .third_bg .third_content a img:hover {
+            transform: scale(0.9);
+        }
+    /*------네번쨰 페이지----------- */
+    .fourth_bg {
+        background-color: #222;
+        
+    }
+    .fourth_bg .fourth_content{
+        width: 1220px; margin: 0 auto;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .fourth_bg .fourth_content .header1 {
+        font-size: 2.1875rem;
+        color:#eee;
+        padding-bottom: 35px;
+    }
+    .fourth_bg .fourth_content .header {
+        font-weight: 700;
+        font-size:4.375rem;
+        color:#eee;
+        background-color: #00aff2;
+        display: inline-block;
+        padding: 10px ;
+        margin-bottom: 100px;
+    }
+    .fourth_bg .fourth_content .blk {
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .fourth_bg .fourth_content .blk .texts {
+        
+    }
+    
+    
+    .fourth_bg .fourth_content .blk .texts .text {
+        font-size: 1.5rem;
+        color:#eee;
+        line-height: 1.5;
+    }
+    .fourth_bg .fourth_content .blk .texts h2 {
+        font-size: 3rem;
+        padding-top: 60px;
+        color:#00aff2;
+        font-weight: 700;
+    }
+    .fourth_bg .fourth_content .first_pic{
+        
+    }
+    .fourth_bg .fourth_content .first_pic p{}
+    .fourth_bg .fourth_content .first_pic p img{}
+    .fourth_bg .fourth_content .first_pic .pic1 {
+        position: absolute; top:150px; right: 50px;
+        text-align: right;
+    }
+    .fourth_bg .fourth_content .first_pic .pic1 .text{
+        /* top:100px; right: 250px; */ /* position: absolute; */
+    }
+    .fourth_bg .fourth_content .first_pic .pic1 h2{
+        /* bottom: 0; right: 300px; */
+    }
+    .fourth_bg .fourth_content .second_pic{}
+    .fourth_bg .fourth_content .second_pic p{}
+    .fourth_bg .fourth_content .second_pic p img{}
+    .fourth_bg .fourth_content .second_pic .pic2 {
+        position: absolute; top:150px; left: 150px;
+    }
+    .fourth_bg .fourth_content .second_pic .pic2 .text{}
+    .fourth_bg .fourth_content .second_pic .pic2 h2{}
+    .fourth_bg .fourth_content .third_pic{}
+    .fourth_bg .fourth_content .third_pic p{}
+    .fourth_bg .fourth_content .third_pic p img{}
+    .fourth_bg .fourth_content .third_pic .pic3 {
+        position: absolute; top:150px; right: 50px;
+        text-align: right;
+    }
+    .fourth_bg .fourth_content .third_pic .pic3 .text{}
+    .fourth_bg .fourth_content .third_pic .pic3 h2{}
+    
+    
+        
+    /*     padding-top: 50px;
+        padding-left: 20px; */
+    
+    /* -----다섯번쨰 페이지----------- */
+    .fifth_bg {
+        background-image: url(../img/기본틀.png);
+        background-size: cover;
+        background-color: bisque;
+        padding-top: 100px;
+    }
+    .fifth_bg .fifth_content {
+        width: 1220px;
+        height: 1040px;
+        margin:0 auto;
+        
+        
+    }
+    .fifth_bg .fifth_content .header {
+        font-size: 2.1875rem;
+        color: #333;
+        margin-bottom: 100px;
+        line-height: 3em; 
+    }
+    .fifth_bg .fifth_content .header span {
+        color:#eee;
+        background-color: #00aff2;
+        font-weight: 700;
+        font-size:4.375rem;
+        
+    }
+    .fifth_bg .fifth_content ul{
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 500px;
+        
+    }
+    .fifth_bg .fifth_content ul li{
+        width:32%; border: 2px solid#dbdbdb;
+        border-radius: 15px;
+    /*     box-shadow: 3px 4px #dbdbdb; */
+        background-color: #f1f1f1;
+    }
+    .fifth_bg .fifth_content ul li .war {
+        /* background-color: aqua; */ /* padding-bottom: 105px; */
+    }
+    .fifth_bg .fifth_content ul li .war p  {}
+    .fifth_bg .fifth_content ul li .war p img {
+        width: 100%;
+    }
+    .fifth_bg .fifth_content ul li .health {
+        /* background-color: green;  */
+    }
+    .fifth_bg .fifth_content ul li .health p {}
+    .fifth_bg .fifth_content ul li .health p img {
+        width: 100%;
+    }
+    
+    .fifth_bg .fifth_content ul li .eat {
+        /* background-color: palegoldenrod; */ /* padding-bottom: 105px; */}
+    .fifth_bg .fifth_content ul li .eat p {}
+    .fifth_bg .fifth_content ul li .eat p img {
+        width: 100%;
+    }
+    .fifth_bg .fifth_content a {
+        display: block;
+        text-align: center;
+    }
+    .fifth_bg .fifth_content a img {
+        width:320px;
+        padding-top:100px;
+        transition: all 0.9s;
+    }
+    .fifth_bg .fifth_content a img:hover {
+        transform: scale(0.9);
+    }
+    
+    
+    /* ----------p class text, h2통합 ---------- */
+    .fifth_bg .fifth_content ul li .war .text, .fifth_bg .fifth_content ul li .health .text,
+    .fifth_bg .fifth_content ul li .eat .text {
+        font-size: 1.5rem;
+        padding-top: 50px;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+    .fifth_bg .fifth_content ul li .eat h2, .fifth_bg .fifth_content ul li .health h2,
+    .fifth_bg .fifth_content ul li .war h2 {
+        font-size: 3rem;
+        padding-top:38px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        text-align: right;
+        font-weight: 700;
+        color: #00aff2;
+    }
+    
+    
+    /* --------다섯번쨰 페이지--------- */
+    .last_bg {
+        background: #fff url(../img/lastBg.png) no-repeat -100px 0;
+        background-size: 80%;
+        background-position-y: center;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .last_bg .right {
+        width: 1220px;
+        height: 1080px;
+        margin:0 auto;
+    }
+    .last_bg .right p{
+        text-align: right;
+        padding-top: 250px;
+        font-size: 2.5rem;
+    }
+    .last_bg .right h2{
+        text-align: right;
+        font-size: 4.3rem;
+        padding-top: 23px;
+        line-height: 1.5;
+        color:#00aff2;
+        font-weight: 700;
+    }
+    .last_bg a {
+    
+    }
+    .last_bg a img {
+        width:320px;
+        position: absolute;
+        bottom: 300px; right: 330px;
+        transition: all 0.9s;
+    } 
+    .last_bg a img:hover {
+        transform: scale(0.9);
+    }
+    
+    /* ----footer----- */
+    .wrap_footer {
+        height: 150px;
+        min-width: 1280px;
+        text-align: center;
+        background: #151a1f;
+        overflow: hidden;
+    }
+    .dis_table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    .dis_table_cell {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        
+    }
+    .wrap_footer .add {
+        padding: 40px 0 4px;
+        font-size: 14px;
+        color: #dcdcdc;
+        letter-spacing: -0.5px;
+        line-height: 22px;
+    }
+    .wrap_footer .copy {
+        font-size: 14px;
+        color: rgba(220,220,220, .5);
+        letter-spacing: 0;
+        line-height: 22px;
+    }
