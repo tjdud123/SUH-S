@@ -6,10 +6,6 @@
         margin:0 auto;  */
         background-color: #f1f1f1;
     }
-    .first_bg, .second_bg ::before{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8));
-    }
-    
     
     .second_bg {}
     .third_bg {}
@@ -17,17 +13,19 @@
     .fifth_bg {}
     
     /* 첫페이지 */
+    body {overflow-x: hidden;}
     .first_bg {
         margin:0 auto;
         position: relative;}
     
     .first_bg .ani {
-        background-image: url(../img/textani.png);
-        background-repeat: repeat-x;
+        background: url(../img/textani.png) repeat-x;
+        background-size: 100%;
+        width: 2000px; height: 150px;
         position: absolute;
         bottom:33%;
         transition: all 50s;
-        animation: slide-left 30s linear infinite;}
+        animation: slide-left 10s linear infinite;}
     
     .first_bg .content1 {
         width: 1220px;
@@ -383,7 +381,7 @@
         height: 150px;
         min-width: 1280px;
         text-align: center;
-        background: #151a1f;
+        background: #222;
         overflow: hidden;
     }
     .dis_table {
